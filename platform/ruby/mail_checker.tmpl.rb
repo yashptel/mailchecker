@@ -2,7 +2,7 @@
 require 'set'
 
 module MailChecker
-  EMAIL_REGEX = /\A{{& unanchoredRegexpString }}\z/i
+  EMAIL_REGEX = /\A{{& unanchoredRegexpString }}\z/iu
   # Blacklisted domains
   BLACKLIST = [{{& listSTR }}].to_set
 

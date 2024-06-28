@@ -10,7 +10,7 @@
 var range = require('node-range');
 
 var blacklist        = new Set([{{& listSTR }}]);
-var isValidEmail     = /^{{& unanchoredRegexpString }}$/;
+var isValidEmail     = /^{{& unanchoredRegexpString }}$/u;
 
 function allDomainSuffixes(email) {
   var domainComponents = email.split('@')[1].split('.');
